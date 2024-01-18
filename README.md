@@ -1,32 +1,35 @@
 <h1> Lesson 10.1: Introduction to Penetration Testing</h1>
 <h2> Summary</h2>
 
-<p1>In this lesson, students will delve into the world of ethical hacking, exploring its financial prospects and societal implications. They will learn about the professional pathway of ethical hackers, the concept of bug bounties, and how organizations leverage these programs to enhance their security posture.</p1>
+<p1>This lesson provides an overview of the importance, methodologies, and key concepts associated with penetration testing. Penetration testing, often called "pen testing," is where cybersecurity professionals deliberately and ethically hack into systems, networks, or applications to identify vulnerabilities before malicious hackers exploit them. By the end of this lesson, students should have a foundational understanding of penetration testing, its methodologies, and its critical role in cybersecurity. They should also be aware of the ethical and legal implications of penetration testing and be able to differentiate between various hacking classifications.</p1>
 <br>
 
 <h2>Learning Objectives</h2>
 <ul>
-<li>Students will define ethical hacking and differentiate it from other forms of hacking.</li>
+<li>Define penetration testing and its role in cybersecurity.</li>
   <br>
-<li>Students will understand the qualifications and skills necessary to become an ethical hacker.</li><br>
+<li>Differentiate between white hat, black hat, and grey hat hackers.</li><br>
   
-<li>Students will define what bug bounties are and understand their significance in identifying security vulnerabilities.</li><br>
+<li>Identify common vulnerabilities that pen testers look for.</li><br>
 
-<li>Objective Summary and Learning Outcome.</li><br>
+<li>Describe the life cycle of a penetration test, including planning, discovery, attack, and reporting</li><br>
 
-<li>Students will understand the legal boundaries within which ethical hacking and bug bounty programs operate.</li>
+<li>Discuss the importance of continuous testing and updating systems in response to findings.</li>
+<br>
+<li>Evaluate the benefits and challenges of external vs. internal penetration testing.</li>
 </ul>
+
 
 <h2>Vocabulary and Acronyms</h2>
 
 <ul>
 <li>
 
-  **Ethical Hacking**</li>
+  **Penetration Testing**</li>
   
 <li>
 
-**Responsible Disclosure**</li>
+**Black Hat Hacker**</li>
   
 <li>
   
@@ -34,44 +37,46 @@
   
 <li>
   
-**Bug Bounty**</li>
+**Grey Hat Hacker**</li>
   
 <li>
   
-  **CVE - Common Vulnerabilities and Exposures**</li>
+  **Vulnerability**</li>
   
 <li>
   
- **Black Hat Hacker**</li>
+ **Exploit**</li>
 
   <li>
   
- **CVE/ID - CVE Identifier**</li>
+ **Red Team**</li>
 
  <li>
   
- **Grey Hat Hacker**</li>
+ **Blue Team**</li>
+
+ <li>
+
+  **Payload**</li>
 
 </ul>
 
 <h2>NICE Framework KSAs</h2>
 
 <ul>
-<li>K0427 - Knowledge of encryption algorithms and cyber capabilities/tools (e.g., SSL, PGP).</li>
+<li>K0119	- Knowledge of hacking methodologies.</li>
 <br>
-<li>S0138 - Skill in using Public-Key Infrastructure (PKI) encryption and digital signature capabilities into applications (e.g., S/MIME email, SSL traffic).</li>
+<li>K0206	- Knowledge of ethical hacking principles and techniques.		</li>
 <br>
-<li>K0018 - Knowledge of encryption algorithms.</li>
+<li>K0177	- Knowledge of cyber attack stages (e.g., reconnaissance, scanning, enumeration, gaining access, escalation of privileges, maintaining access, network exploitation, covering tracks).</li>
 <br>
-<li>K0624 - Knowledge of Application Security Risks (e.g. Open Web Application Security Project Top 10 list).</li>
+<li>K0005	- Knowledge of cyber threats and vulnerabilities. </li>
 <br>
-<li>K0135 - Knowledge of web filtering technologies.</li>
+<li>K0009	- Knowledge of application vulnerabilities.</li>
 <br>
-<li>K0398 - Knowledge of concepts related to websites (e.g., web servers/pages, hosting, DNS, registration, web languages such as HTML).</li>
+<li>K0144	- Knowledge of social dynamics of computer attackers in a global context.</li>
 <br>
-<li>K0444 - Knowledge of how Internet applications work (SMTP email, web-based email, chat clients, VOIP).</li>
-<br>
-<li>K0447 - Knowledge of how to collect, view, and identify essential information on targets of interest from metadata (e.g., email, http).</li> 
+<li>S0052 - Skill in the use of social engineering techniques. (e.g., phishing, baiting, tailgating, etc.).</li>
 </ul>
 
 
@@ -81,254 +86,147 @@
 
 
 <h2>Introduction</h2>
-In the face of escalating cyber threats, ethical hacking has emerged as a robust shield safeguarding the digital realm. This lesson delineates the ethos of ethical hacking, the lucrative allure of bug bounty programs, and the legal scaffolding that governs these domains.
+Today, we delve into an intriguing dimension of cybersecurity: Penetration Testing. Have you ever wondered how companies ensure their systems are secure? Or how do they test the strength of their defenses? The answer lies in the realm of penetration testing.
 
 
-<h2>Understanding Ethical Hacking</h2>
-Ethical hacking, epitomized as the epitome of cybersecurity vigilance, entails authorized probing of systems to unveil potential vulnerabilities.
-<h3><ins>Types of Hackers:</ins></h3>
+<h2>What is Penetration Testing?</h2>
+Penetration testing, affectionately termed "pen testing," mirrors the actions of hackers. However, there's a catch – these tests are authorized and ethical. Their primary objective? To uncover vulnerabilities in systems, networks, or applications before malevolent hackers can.
+
+<h2>Why is Penetration Testing Important?</h2>
+Imagine your home. Now, to ensure thieves can't get in, ask a security expert to try breaking into your house. If they succeed, they'll tell you the weak points so you can strengthen them. Similarly, in the digital world, we employ ethical or "white hat hackers" to do the same for our systems.
+
+
+
+<h2>The Types of Hackers</h2>
 <ul>
-  <li>White Hat (Ethical Hackers)</li>
-  <li>Black Hat (Malicious Hackers)</li>
-  <li>Grey Hat (Middle-ground)</li>
+  <li>
+    
+  **White Hat Hackers:** These are the good guys. They use their skills to find and fix vulnerabilities.</li>
+  <li>
+    
+  **Black Hat Hackers:** The villains of our story. They exploit vulnerabilities for personal gains – be it monetary, informational, or just for fun.</li>
+  <li>
+    
+  **Grey Hat Hackers:** Somewhere in between. They might hack without permission but will inform the entity about their vulnerabilities.</li>
 </ul>
 
 
-<h2>Exploring the Professional Pathway of Ethical Hackers</h2>
-
-Ethical hacking has emerged as a crucial cybersecurity profession. Organizations across the globe are recognizing the indispensable value of ethical hackers in fortifying their digital assets against malicious threats. Here, we unfold the journey of becoming an ethical hacker, the skill sets required, the certifications that add a feather to one’s cap, and the various avenues through which ethical hackers can contribute to cybersecurity while generating income.
-
-
-
-<h3><ins>Certifications</ins></h3>
-Acquiring certifications is a stepping stone towards establishing credibility in the field of ethical hacking. These certifications attest to one's skills and knowledge in cybersecurity and ethical hacking.
+<h4><ins>Real-world example:</ins></h4>
 <ul>
-  <li><ins>Certified Ethical Hacker (CEH)</ins></li>
-  <ul>
-    <li>Offered by EC-Council, the CEH certification equips individuals with the knowledge and skills to seek out vulnerabilities within an organization's systems.
+<li>Remember the infamous Equifax breach of 2017? Black hat hackers exploited a vulnerability in the company's website software, compromising the personal data of 147 million people. Had Equifax conducted thorough penetration testing, this catastrophe might have been averted.</li>
+</ul>
+
+
+<h2>Understanding Vulnerabilities and Exploits</h2>
+
+A vulnerability is akin to a weak lock on your front door. An exploit is the technique a thief (or hacker) uses to break that lock.
+
+<h4><ins>Real-world example:</ins></h4>
+<ul>
+<li>Many of you might have heard of the WannaCry ransomware attack 2017. It exploited a vulnerability in outdated Windows systems, affecting hundreds of thousands of computers worldwide.</li>
+</ul>
+
+
+
+
+
+<h2>The Penetration Testing Life Cycle</h2>
+<ul>
+  <li>
+    
+  **Planning:** Outline the scope of the attack, including the systems to be tested and the testing methods to be used.</li>
+  <li>
+    
+  **Discovery:** Identify potential vulnerabilities in the target systems.</li>
+  <li>
+    
+  **Attack:** Attempt to exploit the identified vulnerabilities.</li>
+  <li>
+    
+  **Reporting:** Document the findings, including successful and unsuccessful attacks, and recommend securing the system.</li>
+</ul>
+
+
+
+
+
+<h2>Red Team vs. Blue Team:</h2>
+In cybersecurity war games, the Red Team plays offense, simulating cyber-attacks, while the Blue Team plays defense, fending off the simulated attacks.
+
+<h4><ins>Real-world example:</ins></h4>
+<ul>
+<li>Major tech companies often host "Red Team exercises." Google, for instance, regularly employs external red teams to test the robustness of their systems against potential threats.
 </li>
-    <li><a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/">CEH Certification Details</a></li>
-  </ul>
-  <br>
-  <li><ins>Offensive Security Certified Professional (OSCP)</ins></li>
-  <ul>
-    <li>This hands-on certification offered by Offensive Security tests one's ability to conduct penetration tests in a controlled environment.</li>
-    <li><a href="https://www.offensive-security.com/pwk-oscp/">OSCP Certification Details</a></li>
-  </ul>
 </ul>
+<h2>Bug Bounty Programs</h2>
+As we delve deeper into penetration testing, a significant avenue that deserves attention is the Bug Bounty Program. Today, we'll expand upon our previous lecture to shed light on these programs and their implications for cybersecurity.
 
-<h3><ins>Skill Sets</ins></h3>
-Proficiency in certain technical and soft skills is pivotal for a successful career in ethical hacking.
-<ul>
-<li><ins>Technical Skills</ins></li>
-<ul>
-<li>Knowledge of programming languages such as Python, JavaScript, and SQL.</li>
-<li>Proficiency in operating systems, particularly Linux.</li>
-<li>Understanding of networking and web technologies.</li>
-  </ul>
-<br>
-<li><ins>Soft Skills</ins></li>
-<ul>
-  <li>
-    
-  **Problem-Solving**: Ability to think like a hacker (creatively and analytically) to identify vulnerabilities.</li>
-  <li>
+<h2>The Evolving Landscape of Penetration Testing</h2>
+While penetration testing provides a structured way for organizations to assess their security postures, it's essential to understand that threats continually evolve. As such, it's beneficial for organizations to tap into the vast community of ethical hackers to detect vulnerabilities. This is where bug bounty programs come into play.
 
-  **Communication**: Effectively conveying findings and recommendations to non-technical stakeholders.</li>
-</ul>
-</ul>
 
-<h3><ins>Income Avenues</ins></h3>
-Ethical hackers have various avenues to ply their trade while making a significant impact in the realm of cybersecurity.
+
+<h2>Bug Bounty Programs – Crowdsourced Cybersecurity</h2>
+
+A Bug Bounty Program is essentially a reward program offered by organizations to incentivize individuals to discover and report bugs, especially those about security vulnerabilities. In other words, it's like a wanted poster for bugs, offering rewards (bounties) to anyone who can find and report them.
+
+<h4><ins>Real-world example:</ins></h4>
 <ul>
-  <br>
-<li><ins>Penetration Testing</ins></li>
-<ul>
-  <li>Conducting authorized simulated attacks to identify vulnerabilities in systems, networks, or applications.</li>
-  <br>
-</ul>
-<li><ins>Security Analysis</ins></li>
-<ul>
-  <li>Evaluating and ensuring the security of digital assets, and recommending measures to mitigate identified vulnerabilities.</li>
-  <br>
-</ul>
-<li><ins>Bug Bounty Hunting</ins></li>
-<ul>
-  <li>Participating in bug bounty programs to identify and report security vulnerabilities in exchange for rewards.
-</li>
-  <br>
-</ul>
-<li><ins>Cybersecurity Consulting</ins></li>
-<ul>
-  <li>Providing expertise and recommendations to organizations to bolster their cybersecurity posture.</li>
-  <br>
-</ul>
-<li><ins>Cybersecurity Training and Education</ins></li>
-<ul>
-  <li>Educating and training individuals or organizations on best practices in cybersecurity.</li>
-  <br>
-</ul>
+<li>Facebook's Bug Bounty program has been active since 2011. In 2018 alone, they paid over $1.1 million bounties to researchers from more than 100 countries. One notable report involved a vulnerability that could allow an attacker to hijack a user's account using the "View As" feature.</li>
 
 </ul>
 
-<h3><ins>Professional Associations and Communities</ins></h3>
-Joining professional associations and communities can foster networking, continuous learning, and staying updated on the latest trends and threats.<br>
-<br>
+
+<h2>Why Are Bug Bounties Beneficial?</h2>
 <ul>
+
+<li>
   
-  <li><a href="https://www.isc2.org/">ISC2:</a> A global community of cybersecurity professionals.</li>
-  <br>
-  <li><a href="https://owasp.org/">OWASP:</a>Open Web Application Security Project, known for its top ten list of web security threats.</li>
-</ul>
-
-
-<h3><ins>Job Prospects</ins></h3>
-
-The demand for ethical hackers is soaring with the perpetual evolution of cyber threats.
-
-<ins>Job Titles:</ins>
-<ul>
-<li>Ethical Hacker</li>
-<li>Penetration Tester</li>
-<li>Security Consultant</li>
-<li>Security Analyst</li>
-</ul>
-
-<ins>Employment Sectors:</ins>
-<ul>
-<li>Financial Institutions</li>
-<li>Healthcare Organizations</li>
-<li>Government Agencies</li>
-<li>Tech Companies</li>
-</ul>
-
-
-
-<h2>Introduction to Bug Bounties</h2>
-Bug bounty programs are a collaborative initiative between companies and the ethical hacking community to identify vulnerabilities in systems, applications, or networks before malicious actors can exploit them.
-<ul>
-<li><ins>Platforms</ins></li>
-  <br>
-<ul>
-  <li><a href="https://www.hackerone.com/">HackerOne: </a>A leading bug bounty platform connecting businesses with ethical hackers. </li><br>
+  **Diversity of Skill Sets:** Different hackers have various techniques, approaches, and perspectives, making them more likely to uncover a broader range of vulnerabilities.</li>
+<li>
   
-  <li><a href="https://www.bugcrowd.com/">Bugcrowd:</a> Another reputable platform facilitating bug bounty programs.</li>
-  <br>
-</ul>
+  **Cost-effective:** It's often more economical to pay bounties for valid vulnerabilities than to hire full-time researchers or suffer a security breach.</li>
+<li>
+  
+  **Reputation:** Companies can demonstrate their commitment to security by having such programs, fostering trust with their users.</li>
+  </ul>
 
-<li><ins>Types of Bounties</ins></li>
+
+<h4><ins>Popular Bug Bounty Platforms:</ins></h4>
 <ul>
-  <li>
-    
-  **Public Bounties**: Open to all ethical hackers.</li>
-  <li>
-    
-  **Private Bounties**: Invitation-only, usually for experienced or specialized hackers.</li>
+<li>HackerOne, Bugcrowd, and Open Bug Bounty serve as intermediaries between companies and ethical hackers. They offer a structured environment where vulnerabilities can be reported, validated, and rewarded.</li>
+  </ul>
+
 </ul>
 
-<li><ins>Rewards</ins></li>
-<br>
+<h4><ins>Real-world example:</ins></h4>
 <ul>
-  <li>Monetary rewards, swag, or points which can be used for recognition.</li>
+<li>In 2016, a 10-year-old Finnish boy named Jani discovered a vulnerability in Instagram allowing him to delete any comment. He reported this via Facebook's bug bounty program and earned $10,000 for his finding.</li>
+
 </ul>
-<br>
-<li><ins>Reporting Process</ins></li>
-<br>
+
+
+
+
+<h2>Challenges of Bug Bounty Programs</h2>
 <ul>
-  <li>Identifying a vulnerability, reporting it through the platform, and working with the company to provide more information if necessary.</li>
-</ul>
-</ul>
-
-<h2>Engagement in Bug Bounty Programs</h2>
-Active participation in bug bounty programs is a practical way to hone skills, contribute to cybersecurity, and earn rewards.<br>
-<ul>
-<li><ins>Process of Engagement</ins></li>
-<ul>
-  <li>
-    
-  **Discovery**: Finding vulnerabilities using various tools and techniques. </li>
-  <li>
-    
-  **Reporting**: Documenting the vulnerability, including how it can be replicated and the potential impact.</li>
-  <li>
-    
-  **Resolution**: Collaborating with the company to resolve the issue.</li>
-  <li>
-    
-  **Reward**: Receiving recognition or compensation for the effort.</li>
-</ul>
-
-
-<li><ins>Examples</ins></li>
-<br>
-<ul>
-  <li><a href="https://www.facebook.com/whitehat">Facebook Bug Bounty Program:</a> Facebook rewards ethical hackers for identifying vulnerabilities in its platforms.</li>
-</ul>
-</ul>
-</ul>
-
-
-
-<h2>Legal Frameworks Surrounding Ethical Hacking and Bug Bounties</h2>
-The legal landscape is crucial to ensure ethical hacking activities remain lawful and constructive.
-<ul>
-<li><ins>Responsible Disclosure</ins></li>
-<br>
-<ul>
-<li>Reporting vulnerabilities directly to the organization and giving them time to fix the issue before public disclosure.</li>
-  <br>
-</ul>
-
-<li><ins>Legal Agreements</ins></li>
-<br>
-<ul>
-<li>Adhering to Non-Disclosure Agreements (NDAs) and the terms of the bug bounty program.</li> 
-  <br>
-</ul>
-
-<li><ins>Overstepping Legal Boundaries</ins></li>
-<br>
-<ul>
-  <li>Understanding the repercussions of unauthorized access or testing outside the defined scope of a bug bounty program.</li>
-</ul>
+<li>
+  
+**Volume of Reports:** With many hackers participating, organizations might get overwhelmed with the number of reports, including many false positives.</li>
+<li>
+  
+**Scope Limitations:** Not all parts of an application or system might be within the bounty program's scope, leading to potential oversights.</li>
+<li>
+  
+**Ethical Considerations:** Ensuring that participants adhere to ethical standards is crucial to prevent unauthorized disclosures or malicious exploitation.</li>
 
 </ul>
 
 
-<h2>Evaluating Real-world Case Studies</h2>
-Analyzing real-world cases provides insights into the practical impact of ethical hacking and bug bounties.<br>
-<br>
-<ul>
-<li><ins>Case Study</ins></li>
-  <br>
-<ul>
-  <li><a href="https://www.hackerone.com/blog/hacker101-success-story">The tale of a bug bounty hunter’s first submission:</a> An inspiring journey of a bug bounty hunter.</li>
-</ul>
-</ul>
-
-
-
-<h2>Practical Application and Hands-on Exploration</h2>
-Hands-on experiences are crucial for honing skills and understanding the real-world dynamics of ethical hacking and bug bounties.
-<ul>
-<li><ins>Hands-on Platforms</ins></li>
-  <br>
-<ul>
-  <li><a href="https://www.hackthebox.eu/">Hack The Box:</a> A platform offering various challenges for honing hacking skills.</li><br>
-
-  <li><a href="https://ctftime.org/">CTF Time:</a> A platform hosting Capture The Flag (CTF) competitions.</li>
-</ul>
-<br>
-<li><ins>Simulated Ethical Hacking</ins></li>
-<br>
-<ul>
-  <li>Engaging in controlled environments to practice ethical hacking skills, such as using VMs like Metasploitable.</li>
-</ul>
-
-</ul>
 
 <h2>Conclusion</h2>
-The synergy between ethical hacking and bug bounties is a robust mechanism to enhance cybersecurity. Through hands-on engagements, legal awareness, and collaborative efforts, the digital realm becomes a more secure frontier against cyber threats.
+Penetration testing isn't a one-time event. With evolving threats, it's a continuous process. Companies like Apple, Google, and Microsoft even have bug bounty programs, rewarding white hat hackers for discovering system vulnerabilities. Penetration testing, supplemented with bug bounty programs, offers a holistic approach to cybersecurity. As the digital landscape becomes more intricate and threats more sophisticated, it's crucial to leverage the collective intelligence and expertise of the global hacker community. Remember, in the world of cybersecurity, it's always a race between those trying to protect systems and those trying to exploit them. Being proactive, staying updated, and embracing community collaboration are our best defenses.
+
 
 
 
@@ -345,6 +243,8 @@ The synergy between ethical hacking and bug bounties is a robust mechanism to en
 
 
 <h2> Presentation</h2>
+
+<a href="https://docs.google.com/presentation/d/1f2X7cvcAUVgF17OMwYUVcCxHEfMdUd1q/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Penetration Testing </a>
 
 
 <h2> Hands-On Labs</h2>
