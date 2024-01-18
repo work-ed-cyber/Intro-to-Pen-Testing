@@ -1,4 +1,4 @@
-<h1> Lesson 5.5: Bug Bounties </h1>
+<h1> Lesson 10.1: Introduction to Penetration Testing</h1>
 <h2> Summary</h2>
 
 <p1>In this lesson, students will delve into the world of ethical hacking, exploring its financial prospects and societal implications. They will learn about the professional pathway of ethical hackers, the concept of bug bounties, and how organizations leverage these programs to enhance their security posture.</p1>
