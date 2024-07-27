@@ -64,19 +64,19 @@
 <h2>NICE Framework KSAs</h2>
 
 <ul>
-<li>K0119	- Knowledge of hacking methodologies.</li>
+<li>K0119: Knowledge of hacking methodologies.</li>
 <br>
-<li>K0206	- Knowledge of ethical hacking principles and techniques.		</li>
+<li>K0206: Knowledge of ethical hacking principles and techniques.		</li>
 <br>
-<li>K0177	- Knowledge of cyber attack stages (e.g., reconnaissance, scanning, enumeration, gaining access, escalation of privileges, maintaining access, network exploitation, covering tracks).</li>
+<li>K0177: Knowledge of cyber attack stages (e.g., reconnaissance, scanning, enumeration, gaining access, escalation of privileges, maintaining access, network exploitation, covering tracks).</li>
 <br>
-<li>K0005	- Knowledge of cyber threats and vulnerabilities. </li>
+<li>K0005: Knowledge of cyber threats and vulnerabilities. </li>
 <br>
-<li>K0009	- Knowledge of application vulnerabilities.</li>
+<li>K0009: Knowledge of application vulnerabilities.</li>
 <br>
-<li>K0144	- Knowledge of social dynamics of computer attackers in a global context.</li>
+<li>K0144: Knowledge of social dynamics of computer attackers in a global context.</li>
 <br>
-<li>S0052 - Skill in the use of social engineering techniques. (e.g., phishing, baiting, tailgating, etc.).</li>
+<li>S0052: Skill in the use of social engineering techniques. (e.g., phishing, baiting, tailgating, etc.).</li>
 </ul>
 
 
@@ -227,7 +227,18 @@ A Bug Bounty Program is essentially a reward program offered by organizations to
 <h2>Conclusion</h2>
 Penetration testing isn't a one-time event. With evolving threats, it's a continuous process. Companies like Apple, Google, and Microsoft even have bug bounty programs, rewarding white hat hackers for discovering system vulnerabilities. Penetration testing, supplemented with bug bounty programs, offers a holistic approach to cybersecurity. As the digital landscape becomes more intricate and threats more sophisticated, it's crucial to leverage the collective intelligence and expertise of the global hacker community. Remember, in the world of cybersecurity, it's always a race between those trying to protect systems and those trying to exploit them. Being proactive, staying updated, and embracing community collaboration are our best defenses.
 
-
+<h2>Definitions</h2>
+<ul>
+<li><b>Penetration Testing:</b> A simulated cyber attack conducted to identify and fix security vulnerabilities in a system or network.</li><br>
+<li><b>Black Hat Hacker:</b> A person who uses their hacking skills for malicious purposes, such as stealing data or disrupting systems.</li><br>
+<li><b>White Hat Hacker:</b> A security professional who uses their hacking skills to help organizations find and fix vulnerabilities before they can be exploited by malicious actors.</li><br>
+<li><b>Grey Hat Hacker:</b> A hacker who may occasionally cross ethical boundaries but generally aims to improve security by identifying vulnerabilities and notifying the affected parties.</li><br>
+<li><b>Vulnerability:</b> A weakness or flaw in a system or software that can be exploited by attackers to gain unauthorized access or cause harm.</li><br>
+<li><b>Exploit:</b> A method or tool used to take advantage of a vulnerability in order to gain unauthorized access or execute malicious actions.</li><br>
+<li><b>Red Team:</b> A group of security professionals who simulate attacks to test and improve an organization's security posture.</li><br>
+<li><b>Blue Team:</b> A group responsible for defending against and responding to security threats and attacks within an organization.</li><br>
+<li><b>Payload:</b> The part of a malicious code or exploit that performs the intended action or delivers the harmful effect, such as installing malware or exfiltrating data.</li>
+</ul>
 
 
 
@@ -248,6 +259,6 @@ Penetration testing isn't a one-time event. With evolving threats, it's a contin
 
 
 <h2> Hands-On Labs</h2>
-
+<h2>Games</h2>
 
 <h2>Additonal Resources</h2>
