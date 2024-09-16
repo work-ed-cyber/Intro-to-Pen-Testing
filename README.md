@@ -66,7 +66,7 @@
 <ul>
 <li>K0119: Knowledge of hacking methodologies.</li>
 <br>
-<li>K0206: Knowledge of ethical hacking principles and techniques.		</li>
+<li>K0206: Knowledge of ethical hacking principles and techniques.	</li>
 <br>
 <li>K0177: Knowledge of cyber attack stages (e.g., reconnaissance, scanning, enumeration, gaining access, escalation of privileges, maintaining access, network exploitation, covering tracks).</li>
 <br>
