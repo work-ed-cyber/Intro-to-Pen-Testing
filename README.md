@@ -255,7 +255,7 @@ Penetration testing isn't a one-time event. With evolving threats, it's a contin
 
 <h2> Presentation</h2>
 
-<a href="https://docs.google.com/presentation/d/1f2X7cvcAUVgF17OMwYUVcCxHEfMdUd1q/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Penetration Testing </a>
+<a href="https://docs.google.com/presentation/d/1a_IIvhvCBk1qv9z4Y8IBac9pwDnT9FSI/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Introduction to Penetration Testing </a>
 
 
 <h2> Hands-On Labs</h2>
