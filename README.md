@@ -259,6 +259,9 @@ Penetration testing isn't a one-time event. With evolving threats, it's a contin
 
 
 <h2> Hands-On Labs</h2>
+<a href="https://github.com/work-ed-cyber/10.1-easy">Introduction to Penetration Testing </a> - Easy <br>
+<br>
+<a href="https://github.com/work-ed-cyber/10.1-med">Penetration Testing Workshop </a> - Medium
 <h2>Games</h2>
 <a href="https://create.kahoot.it/share/quiz-lesson-10-1-introduction-to-penetration-testing/abf61c2b-f611-4520-9d71-3d2f85eede95"> Kahoot: Introduction to Penetration Testing </a>
 
