@@ -93,7 +93,7 @@ Today, we delve into an intriguing dimension of cybersecurity: Penetration Testi
 Penetration testing, affectionately termed "pen testing," mirrors the actions of hackers. However, there's a catch – these tests are authorized and ethical. Their primary objective? To uncover vulnerabilities in systems, networks, or applications before malevolent hackers can.
 
 <h2>Why is Penetration Testing Important?</h2>
-Imagine your home. Now, to ensure thieves can't get in, ask a security expert to try breaking into your house. If they succeed, they'll tell you the weak points so you can strengthen them. Similarly, in the digital world, we employ ethical or "white hat hackers" to do the same for our systems.
+Imagine your home. Now, to ensure thieves can't get in, ask a security expert to try breaking into your house. If they succeed, they'll tell you the weak points so you can strengthen them. Similarly, in the digital world, we employ ethical or "White Hat Hackers" to do the same for our systems.
 
 
 
@@ -107,7 +107,7 @@ Imagine your home. Now, to ensure thieves can't get in, ask a security expert to
   **Black Hat Hackers:** The villains of our story. They exploit vulnerabilities for personal gains – be it monetary, informational, or just for fun.</li>
   <li>
     
-  **Grey Hat Hackers:** Somewhere in between. They might hack without permission but will inform the entity about their vulnerabilities.</li>
+  **Grey Hat Hackers:** Somewhere in between. They might hack without permission, but will inform the entity about their vulnerabilities.</li>
 </ul>
 
 
@@ -123,7 +123,7 @@ A vulnerability is akin to a weak lock on your front door. An exploit is the tec
 
 <h4><ins>Real-world example:</ins></h4>
 <ul>
-<li>Many of you might have heard of the WannaCry ransomware attack 2017. It exploited a vulnerability in outdated Windows systems, affecting hundreds of thousands of computers worldwide.</li>
+<li>Many of you might have heard of the WannaCry ransomware attack in 2017. It exploited a vulnerability in outdated Windows systems, affecting hundreds of thousands of computers worldwide.</li>
 </ul>
 
 
@@ -155,7 +155,7 @@ In cybersecurity war games, the Red Team plays offense, simulating cyber-attacks
 
 <h4><ins>Real-world example:</ins></h4>
 <ul>
-<li>Major tech companies often host "Red Team exercises." Google, for instance, regularly employs external red teams to test the robustness of their systems against potential threats.
+<li>Major tech companies often host "Red Team exercises." Google, for instance, regularly employs external red teams to test the robustness of its systems against potential threats.
 </li>
 </ul>
 <h2>Bug Bounty Programs</h2>
@@ -172,7 +172,7 @@ A Bug Bounty Program is essentially a reward program offered by organizations to
 
 <h4><ins>Real-world example:</ins></h4>
 <ul>
-<li>Facebook's Bug Bounty program has been active since 2011. In 2018 alone, they paid over $1.1 million bounties to researchers from more than 100 countries. One notable report involved a vulnerability that could allow an attacker to hijack a user's account using the "View As" feature.</li>
+<li>Facebook's Bug Bounty program has been active since 2011. In 2018 alone, they paid over $1.1 million in bounties to researchers from more than 100 countries. One notable report involved a vulnerability that could allow an attacker to hijack a user's account using the "View As" feature.</li>
 
 </ul>
 
@@ -201,7 +201,7 @@ A Bug Bounty Program is essentially a reward program offered by organizations to
 
 <h4><ins>Real-world example:</ins></h4>
 <ul>
-<li>In 2016, a 10-year-old Finnish boy named Jani discovered a vulnerability in Instagram allowing him to delete any comment. He reported this via Facebook's bug bounty program and earned $10,000 for his finding.</li>
+<li>In 2016, a 10-year-old Finnish boy named Jani discovered a vulnerability in Instagram that allowed him to delete any comment. He reported this via Facebook's bug bounty program and earned $10,000 for his finding.</li>
 
 </ul>
 
@@ -265,4 +265,4 @@ Penetration testing isn't a one-time event. With evolving threats, it's a contin
 <h2>Games</h2>
 <a href="https://create.kahoot.it/share/quiz-lesson-10-1-introduction-to-penetration-testing/abf61c2b-f611-4520-9d71-3d2f85eede95"> Kahoot: Introduction to Penetration Testing </a>
 
-<h2>Additonal Resources</h2>
+<h2>Additional Resources</h2>
